@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var exercises = require('./routes/exercises');
 var home = require('./routes/home');
 var favorites = require('./routes/favorites');
+var exercisePage = require('./routes/exercisePage');
 //var settings = require('./routes/settings');
 // Example route
 // var user = require('./routes/user');
@@ -41,6 +42,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/exercises', exercises.viewExercises);
+app.get('/exercisePage', exercisePage.viewExPage);
 app.get('/home',home.viewHome);
 app.get('/favorites',favorites.viewFavorites);
 //app.get('/settings', settings.viewSettings);
