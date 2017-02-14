@@ -7,8 +7,11 @@
 </head>
 <body>
 <div class="container">
-
-	<link href="css/style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"> 
 	<h1>
 			Favorites
 	</h1>
@@ -30,15 +33,18 @@
 
 	</div>
 
-	<div class = "navigation">
-		<table style="width:50%">
-			<tr>
-				<th><a href="/exercises"><p>Exercises</p></a> </th>
-				<th><a href="/home"><p>Home</p></a>  </th>
-				<th><a href="/favorites"><p>Favorites </p></a> </th>
-			</tr>
-		</table>
-	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="/home">
+					<span class="glyphicon glyphicon-home">Home</span></a></li>
+				<li><a href="/exercises">
+					<span class="glyphicon glyphicon-tint">Exercises<span></a></li>
+				<li class="active"><a href="/favorites">
+					<span class="glyphicon glyphicon-heart">Favorites<span></a><li>
+			</ul>
+		</div>
+	</nav>
 		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
