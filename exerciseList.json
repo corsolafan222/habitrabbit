@@ -1,0 +1,103 @@
+{
+	"exercises": [
+		{
+			"name": "One-legged deadlifts",
+			"bodyPart":"lowerbody",
+			"subBody":"legs",
+			"time":"15 min",
+			"equipment":"yes",
+			"description": "Stand on your left leg and hold a kettlebell or dumbbell in your right hand. Maintain a neutral spine as you hinge at your hips, lowering the kettlebell towards the floor and allowing your right leg to extend out behind you. Pause for a beat before slowly reversing the motion and returning to the start position. Perform 8 to 12 reps and then repeat on the other side.",
+			"imageURL": "http://cdn-jpg2.theactivetimes.net/sites/default/files/u141063/EMBED%201%20single%20leg%20deadlift%20shutterstock_314080361.jpg"			
+		},
+		{
+			"name": "One-Legged Shoulder Press",
+			"bodyPart":"upperbody",
+		    "subBody":"shoulder",
+			"time":"15 min",
+			"equipment":"yes",
+			"description": "Stand on your left leg. Hold a kettlebell or dumbbell in your right hand and keep your core tight and spine neutral as you raise it straight above your head. Slowly lower your right arm down so that your right elbow and forearm form a 90-degree angle (pictured here). Repeat the movement for 8 to 12 reps and then repeat on the other side.",
+			"imageURL": "http://cdn-jpg2.theactivetimes.net/sites/default/files/u141063/EMBED%202%20single%20leg%20shoulder%20press%20shutterstock_249073096.jpg"			
+		},
+		{
+			"name": "Spider Push-Ups",
+			"bodyPart":"upperbody",
+			"subBody":"arm",
+			"time":"10 min",
+			"equipment":"no",
+			"description": "Start in normal push-up position, as you lower down towards the floor draw your right knee to your right elbow. Extend your right leg back as you return to the starting position. From here, raise your left arm up to the sky as you rotate to the left. Return to the starting position and then repeat the entire sequence with your left knee and right arm, alternating sides for 10 to 20 reps.",
+			"imageURL": "https://media4.popsugar-assets.com/files/thumbor/ACv-fSJZmcqKNuOF4IfSMSv-Cu8/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/07/21/802/n/1922398/7b41637c_Spider-Man-Push-Up.jpg"			
+		},
+		{
+			"name": "Static Back",
+			"bodyPart": "head",
+			"subBody":"neck",
+			"time":"8 min",
+			"equipment":"no",
+			"description": "1. Lie on the floor with your legs on a chair or ottoman, with both your knees and hips at ninety degrees. 2. Place your arms on the floor at either 45 degrees or shoulder level with your palms. This exercise will place your head in the same plane as your shoulders, and allow the muscles of your neck and upper back to release. Stay here until your back settles into the floor",
+			"imageURL": "http://goodrelaxation.com/wp-content/uploads/2016/03/static-back-for-neck-and-shoulders.jpg"			
+		},
+		{
+			"name": "Static Wall",
+			"bodyPart": "upperbody",
+			"subBody":"back", 
+			"time":"8 min",
+			"equipment":"no",
+			"description": "1. Lie on the floor and scoot all the way into the wall with your legs straight up it. 2. If you are stiff in your hamstrings, scoot back until your tailbone rests flat on the floor. 3. Pull your toes back and tighten your thighs. 4. It is important for your feet to be hip-width apart and pointing straight out from the wall. 5. Hold this position for 3 minutes. In this exercise, the muscles of your neck and upper back will continue to release as your thoracic back extends against the hard surface of the floor. By keeping your thighs tight and toes pulled back, this exercise will also engage the muscles of your lower leg without interference from imbalances in the upper body.",
+			"imageURL": "http://bass365.com/wp-content/uploads/2012/08/StaticWall.jpg"
+		},
+		{
+			"name": "Frog",
+			"bodyPart": "head",
+			"subBody":"neck",
+			"time":"5 min",
+			"equipment":"no",
+			"description": "1. Lie on the floor with your feet together and your knees apart. 2. Have your palms up on the floor at 45 degrees to your body. 3. Just hang out here and relax for 2 minutes. Your low back will naturally arch off the floor, and you should allow that to happen. Frog not only feels great, but also releases the muscles of your groin and inner thighs. Breathe while you are in this position, and pay close attention to what is happening to your body. You will feel the muscles of your neck, jaw, and upper back relax if you let them. Try not to chew gum or text during this exercise. Just let your body settle and adjust.",
+			"imageURL": "http://www.yogabasics.com/YB-NEW/wp-content/uploads/2013/11/DownwardFacingFrog1.jpg"
+		},
+		{
+			"name": "Levator Scapula Stretch",
+			"bodyPart": "head",
+			"subBody":"neck",
+			"time":"5 min",
+			"equipment":"no",
+			"description": "The levator scapula stretch is also important for eliminating neck pain. The levator scapula is a muscle that often becomes tight and may be very tender where it attaches to the shoulder blade. This stretch can be performed while sitting or standing. 1. Lengthen the muscle by raising the elbow above the shoulder on the side to stretch. 2. In this position, first rest the elbow against a door jamb. This rotates the outside of shoulder blade up and the inside of it down, which lengthens the levator scapula muscle (Figure 3). 3. Second, turn the head away from the side that is stretching and bring the chin down, stretching the back of the neck.4. Third, place the fingers of the other hand on the top of the head and gently pull the head forward increasing the stretch slightly (Figure 5). 5. Hold this for about 30 seconds to a minute.",
+			"imageURL": "http://www.spine-health.com/files/images/levator-scapula-stretch2_0.jpg"
+		},		
+		{
+			"name": "Quadriceps stretch (front of thighs):",
+			"bodyPart": "legs",
+			"subBody":"Quadriceps", 
+			"time":"2 min",
+			"equipment":"no",
+			"description": "1. Stand on one leg and raise the other leg off the floor, bending at the knee. Gently pull your foot with the opposite hand and bring your foot close to your buttock. 2. Hold onto a wall or a chair for balance. Hold 20 to 30 seconds and repeat with the other leg.",
+			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/NymzlPUHWB0Ezc8NG-q7vg5z57A/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/07/29/788/n/1922729/c407e6635886ed81_quad-stretch-stranding/i/Easy-Quad-Stretch.jpg"
+		},
+		{
+			"name": "Hamstring stretch ",
+			"bodyPart": "legs",
+			"subBody":"Hamstring", 
+			"time":"2 min",
+			"equipment":"no",
+			"description": "Sit on the ground and bend one leg, resting the foot of the bent leg on the inside of the opposite outstretched one. Bend at the waist and stretch forward, reaching the toes on the outstretched leg. Hold for 20 to 30 seconds and repeat on the other leg. Move slowly and gently; avoid bouncing.",
+			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/fG0DEkFKyI77K20-t-6-of7_tPE/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/03/12/2/192/1922729/9e9ea039da54fcd0_Hurdler/i/Modified-Hurdler-Stretch.jpg"
+		},
+		{
+			"name": "Plié Squat",
+			"bodyPart": "lowerbody",
+			"subBody":"thigh", 
+			"time":"4 min",
+			"equipment":"no",
+			"description":"Improve strength and mobility by getting seriously low in these plié  squats. Squeezing those glutes at the top of the move will give you more bang for your buck, too. How to: Stand tall, feet slightly wider than shoulder-width apart, toes pointed out at 45-degree angles (a). Keep your back straight, knees over toes and your weight in the heels of your feet (b). Engage your glutes and thighs as you lower into a deep squat until thighs parallel to the ground (or as close as you can get them) (c). Powering through your heels, push up to return to starting position (d). Repeat.",
+			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/Mf0Mqvp9u2LzXXZQyL4aqotFnmk/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2013/09/19/755/n/1922729/22183032776364b3_Wide-Squat/i/Pli%C3%A9-Squat-15-Reps.jpg"
+		},
+		{
+			"name": "Lateral Step-Out Squat",
+			"bodyPart": "lowerbody",
+			"subBody":"thigh", 
+			"time":"5 min",
+			"equipment":"no",
+			"description":"We promise you’ll feel this one fire up the hips, glutes and thighs. If you’re impervious to the burn, place a resistance band around your ankles to increase the resistance with each step. How to: Stand up straight, feet shoulder-width apart (a). Keeping toes pointed straight ahead and knees over toes, lower into a standard squat (b). Hold that squat position as you take two steps to your right (c). Pause, then take two small side steps to your left (d). Repeat.",
+			"imageURL": "http://lifeinleggings.com/wp-content/uploads/2015/08/lateral-lunge-exercise-breakdown.jpg"
+		}
+	]
+}
