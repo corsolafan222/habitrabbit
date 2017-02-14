@@ -1,5 +1,8 @@
 <!doctype html>
 <html>
+<!--Basic mobile web page layout, source: http://www.w3schools.com/w3css/w3css_mobile.asp-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <head>
 	<title>
 		Habit Rabbit
@@ -7,38 +10,47 @@
 </head>
 <body>
 <div class="container">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/habitrabbit.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"> 
+	<!-- Glyphicons from https://getbootstrap.com/components/#glyphicons-->
+	<!-- Top navigation bar with back button and page title-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li>
+					<div id="back-button">
+						<h4>
+							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span>
+						</h4>
+					</div>
+				</li>
+				<li><h4>&nbspExercise Name would go here</h4></li>
+			</ul>
+		</div>
+	</nav>
 
-	<link href="css/style.css" rel="stylesheet">
 	<h1>
 			Time to exercise!
 	</h1>
 	<img src="http://www.serebii.net/art/th/427.png" class="img-responsive"/>
 
-	<div class = "Favorites">
-
-		<table style="width:50%">
-			<tr>
-				
-			</tr>
-			<tr>
-				
-			</tr>
-			<tr>
-				
-			</tr>
-		</table>
-
-	</div>
-
-	<div class = "navigation">
-		<table style="width:50%">
-			<tr>
-				<th><a href="/exercises"><p>Exercises</p></a> </th>
-				<th><a href="/home"><p>Home</p></a>  </th>
-				<th><a href="/favorites"><p>Favorites </p></a> </th>
-			</tr>
-		</table>
-	</div>
+<!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li><a href="/home">
+					<span class="glyphicon glyphicon-home">Home</span></a></li>
+				<li class="active"><a href="/exercises">
+					<span class="glyphicon glyphicon-tint">Exercises<span></a></li>
+				<li><a href="/favorites">
+					<span class="glyphicon glyphicon-heart">Favorites<span></a><li>
+			</ul>
+		</div>
+	</nav>
 		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="/js/bootstrap.min.js"></script>

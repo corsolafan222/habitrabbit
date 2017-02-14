@@ -1,5 +1,8 @@
 <!doctype html>
 <html>
+<!--Basic mobile web page layout, source: http://www.w3schools.com/w3css/w3css_mobile.asp-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <head>
 	<title>
 		Habit Rabbit
@@ -9,12 +12,24 @@
 <div class="container">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/habitrabbit.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet"> 
-	<h1>
-			Favorites
-	</h1>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li>
+					<div id="back-button">
+						<h4>
+							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span>
+						</h4>
+					</div>
+				</li>
+				<li><h4>&nbspFavorites</h4></li>
+			</ul>
+		</div>
+	</nav>
 	<img src="http://www.serebii.net/art/th/427.png" class="img-responsive"/>
 
 	<div class = "Favorites">
@@ -33,6 +48,7 @@
 
 	</div>
 
+<!--Navigation bar, fav tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">

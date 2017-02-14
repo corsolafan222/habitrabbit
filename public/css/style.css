@@ -4,3 +4,24 @@ h1, h2, h3, h4, h5 {
 	color: goldenrod;
 }
 
+body {
+	padding-top: 75px;
+}
+
+.img-thumbnail{
+	max-height: 80px;
+	max-width: 80px;
+	border: none;
+}
+
+.navbar-nav {
+	margin:25px;
+	max-height: 25px;
+}
+
+
+/* Makes the navigation bar horizonal in mobile view 
+source: http://stackoverflow.com/questions/30644563 */
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}

@@ -1,5 +1,8 @@
 <!doctype html>
 <html>
+<!--Basic mobile web page layout, source: http://www.w3schools.com/w3css/w3css_mobile.asp-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <head>
 	<title>
 		Habit Rabbit
@@ -9,18 +12,26 @@
 <div class="container">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/habitrabbit.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet"> 
 
-	<div class = "header">
-		<table style="width:50%">
-			<tr>
-				<th><h1>Home</h1> </th>
-				<!--<th><a href="/exercises"><p>Done</p></a> </th>-->
-			</tr>
-		</table>
-	</div>
+	<nav class="navbar navbar-default navbar-fixed-top mobile-bar">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+				<li>
+					<div id="back-button">
+						<h5>
+							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span>
+						</h5>
+					</div>
+				</li>
+				<li><h4>&nbspHabit Rabbit Home</h4></li>
+			</ul>
+		</div>
+	</nav>
+
 	<h3>Select a Body Part!</h3>
 	<div class = "body">
 		<h2><a href="exercises">Head</a></h2>
@@ -29,6 +40,7 @@
 		<h2><a href="exercises">Legs</a></h2>
 	</div>
 
+<!--Navigation bar, home tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">
