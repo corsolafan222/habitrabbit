@@ -42,9 +42,11 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/exercises', exercises.viewExercises);
-app.get('/exercisePage', exercisePage.viewExPage);
+//app.get('/exercisePage', exercisePage.viewExPage);
 app.get('/home',home.viewHome);
 app.get('/favorites',favorites.viewFavorites);
+app.get('/exercisePage/:name',exercisePage.viewExPage);
+
 //app.get('/settings', settings.viewSettings);
 // Example route
 // app.get('/users', user.list);
