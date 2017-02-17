@@ -23,14 +23,19 @@
 		var exName = data.exercises[exId].name;
 		var exDescription = data.exercises[exId].description;
 		var exBodyPart = data.exercises[exId].bodyPart;
-		var exEquipment = data.exercises[exId].bodyPart;
+		var exEquipment = data.exercises[exId].equipment;
 		var exImageURL = data.exercises[exId].imageURL;
+		var exTime = data.exercises[exId].time;
 
 		res.render('exercisePage',{
 			name : exName,
 			description : exDescription,
 			bodyPart : exBodyPart, 
-			equipment : exEquipment
+			equipment : exEquipment,
+			time : exTime,
+			equipment : exEquipment,
+			imageURL : exImageURL
+
 		});
 		//const exercise = getArray(exId);
 		//var name = result [0];

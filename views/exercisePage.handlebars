@@ -28,17 +28,24 @@
 						</h4>
 					</div>
 				</li>
-				<li><h4>&nbsp{{name}}</h4></li>
-				<li><h4>&nbsp{{description}}</h4></li>
-				<li><h4>&nbsp{{bodyPart}}</h4></li>
+
 			</ul>
 		</div>
 	</nav>
+	
+</div>
+
+<div class = "content">
 
 	<h1>
-			Time to exercise!
+			{{name}}
 	</h1>
-	<img src="http://www.serebii.net/art/th/427.png" class="img-responsive"/>
+	<h4>Body Part:&nbsp{{bodyPart}}</h4>
+	<h4>Time: &nbsp{{time}}</h4>
+	<br>
+	<p>&nbsp{{description}}</p></li>
+
+	<img class="img" src ="{{imageURL}}"/>
 
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
@@ -54,8 +61,7 @@
 		</div>
 	</nav>
 		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
-		<script src="/js/bootstrap.js"></script>
+		<script src="js/bootstrap.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
-
