@@ -33,12 +33,11 @@
 	</nav>
 
 	<h3>Select a Body Part!</h3>
-	<div class = "body">
-		<h2><a href="exercises">Head</a></h2>
-		<h2><a href="exercises">Upper Body</a></h2>
-		<h2><a href="exercises">Lower Body</a></h2>
-		<h2><a href="exercises">Legs</a></h2>
-	</div>
+	{{#each part}}
+		<div class = "body">
+			<h2><a href="exercises/{{name}}">{{name}}</a></h2>
+		</div>
+	{{/each}}
 
 <!--Navigation bar, home tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
