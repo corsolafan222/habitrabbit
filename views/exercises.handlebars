@@ -34,11 +34,11 @@
 	</nav>
 <!--Should read JSON file to update exercise list, with filtering system-->
 
-{{#each exId}}
-	<div class = "{{bodyPart}}" >
+{{#each exercises}}
+	<div class = "{{bodyPart}}">
 		<table style="width: 50%">
 			<tr>
-				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{ dat.exercises[exId].imageURL}}"/></a></td>
+				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
 				<td><a href="exercisePage/{{id}}"><h3>{{name}}</h3></a></td>
 				<td><img src="images/heart-icon.png"/></td>
 			</tr>
@@ -46,6 +46,10 @@
 	</div>
 {{/each}}
 
+<script>
+
+$('.lowerbody').remove();
+</script>
 <!--
 		<table style="width:50%">
 			<tr>
@@ -84,15 +88,16 @@
 	</nav>
 
 		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<script src="/js/bootstrap.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
+		<!--
 		<script>
-			var x = document.getElementsByClassName("{{body}}");
+			var x = document.getElementsByClassName("{{part.0.name}}");
 			var i;
 			for (i = 0; i < x.length; i++) {
 			    x[i].style.visibility = "visible";
 			}
-		</script>
+		</script> -->
 </body>
 </div>
 </html>

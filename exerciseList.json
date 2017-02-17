@@ -1,5 +1,5 @@
 {
-	"part" : [{"name":"head"},{"name":"upperbody"},{"name":"lowerbody"},{"name":"legs"}],
+	"part" : [],
 	"exercises": [
 		{
 			"name": "One-legged deadlifts",

@@ -41,7 +41,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/exercises/:name', exercises.viewExercises);
+app.get('/exercises', exercises.viewExercises);
 //app.get('/exercisePage', exercisePage.viewExPage);
 app.get('/home',home.viewHome);
 app.get('/favorites',favorites.viewFavorites);
