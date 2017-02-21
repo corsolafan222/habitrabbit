@@ -1,0 +1,34 @@
+{
+	"exercises": [
+		{
+			"name": "One-Legged Shoulder Press",
+			"id":"1",
+			"bodyPart":"upperbody",
+		    "subBody":"shoulder",
+			"time":"15 min",
+			"equipment":"yes",
+			"description": "Stand on your left leg. \nnewlineHold a kettlebell or dumbbell in your right hand and keep your core tight and spine neutral as you raise it straight above your head. Slowly lower your right arm down so that your right elbow and forearm form a 90-degree angle (pictured here). Repeat the movement for 8 to 12 reps and then repeat on the other side.",
+			"imageURL": "http://cdn-jpg2.theactivetimes.net/sites/default/files/u141063/EMBED%202%20single%20leg%20shoulder%20press%20shutterstock_249073096.jpg"			
+		},
+		{
+			"name": "Spider Push-Ups",
+			"id":"2",
+			"bodyPart":"upperbody",
+			"subBody":"arm",
+			"time":"10 min",
+			"equipment":"no",
+			"description": "Start in normal push-up position, as you lower down towards the floor draw your right knee to your right elbow. Extend your right leg back as you return to the starting position. From here, raise your left arm up to the sky as you rotate to the left. Return to the starting position and then repeat the entire sequence with your left knee and right arm, alternating sides for 10 to 20 reps.",
+			"imageURL": "https://media4.popsugar-assets.com/files/thumbor/ACv-fSJZmcqKNuOF4IfSMSv-Cu8/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/07/21/802/n/1922398/7b41637c_Spider-Man-Push-Up.jpg"			
+		},
+		{
+			"name": "Static Wall",
+			"id":"4",
+			"bodyPart": "upperbody",
+			"subBody":"back", 
+			"time":"8 min",
+			"equipment":"no",
+			"description": "1. Lie on the floor and scoot all the way into the wall with your legs straight up it. 2. If you are stiff in your hamstrings, scoot back until your tailbone rests flat on the floor. 3. Pull your toes back and tighten your thighs. 4. It is important for your feet to be hip-width apart and pointing straight out from the wall. 5. Hold this position for 3 minutes. In this exercise, the muscles of your neck and upper back will continue to release as your thoracic back extends against the hard surface of the floor. By keeping your thighs tight and toes pulled back, this exercise will also engage the muscles of your lower leg without interference from imbalances in the upper body.",
+			"imageURL": "http://bass365.com/wp-content/uploads/2012/08/StaticWall.jpg"
+		}
+	]
+}

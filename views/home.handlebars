@@ -34,20 +34,12 @@
 
 	<h3>Select a Body Part!</h3>
 	<div class = "body">
-		<div id="head"><h2>Head</h2></div>
-		<h2><a href="exercises">Upper Body</a></h2>
-		<h2><a href="exercises">Lower Body</a></h2>
-		<h2><a href="exercises">Legs</a></h2>
+		<h2><a href="exercises?bodyPart=head">Head</a></h2>
+		<h2><a href="exercises?bodyPart=upperbody">Upper Body</a></h2>
+		<h2><a href="exercises?bodyPart=lowerbody">Lower Body</a></h2>
+		<h2><a href="exercises?bodyPart=legs">Legs</a></h2>
 	</div>
 
-	<script>
-	//Make variable pickedbody = head if head is pressed
-		$("#head").click(function() {
-		pickedbody = "head"
-		console.log(pickedbody);
-		$('.head').remove();
-	});
-	</script>
 <!--Navigation bar, home tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">

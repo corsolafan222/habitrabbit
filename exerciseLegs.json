@@ -1,0 +1,24 @@
+{
+	"exercises": [
+		{
+			"name": "Quadriceps stretch (front of thighs):",
+			"id":"7",
+			"bodyPart": "legs",
+			"subBody":"Quadriceps", 
+			"time":"2 min",
+			"equipment":"no",
+			"description": "1. Stand on one leg and raise the other leg off the floor, bending at the knee. Gently pull your foot with the opposite hand and bring your foot close to your buttock. 2. Hold onto a wall or a chair for balance. Hold 20 to 30 seconds and repeat with the other leg.",
+			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/NymzlPUHWB0Ezc8NG-q7vg5z57A/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/07/29/788/n/1922729/c407e6635886ed81_quad-stretch-stranding/i/Easy-Quad-Stretch.jpg"
+		},
+		{
+			"name": "Hamstring stretch ",
+			"id":"8",
+			"bodyPart": "legs",
+			"subBody":"Hamstring", 
+			"time":"2 min",
+			"equipment":"no",
+			"description": "Sit on the ground and bend one leg, resting the foot of the bent leg on the inside of the opposite outstretched one. Bend at the waist and stretch forward, reaching the toes on the outstretched leg. Hold for 20 to 30 seconds and repeat on the other leg. Move slowly and gently; avoid bouncing.",
+			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/fG0DEkFKyI77K20-t-6-of7_tPE/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/03/12/2/192/1922729/9e9ea039da54fcd0_Hurdler/i/Modified-Hurdler-Stretch.jpg"
+		}
+	]
+}
