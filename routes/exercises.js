@@ -7,6 +7,18 @@ exports.viewExercises = function(req,res){
   	//var pickedbody = { name: "head"}
 	//data.part.push(pickedbody)
   //console.log(data)
-  res.render('exercises', data);
+  console.log(data.fav);
+  var ex = data.exercises;
+  var favorite = data.fav;
+  res.render('exercises', {
+			exercises : ex,
+			fav : favorite,
+
+		});
+};
+
+function pushFav(obj){
+	data.fav.push(obj);
+	return data.fav;
 };
 

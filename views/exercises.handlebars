@@ -34,17 +34,36 @@
 	</nav>
 <!--Should read JSON file to update exercise list, with filtering system-->
 
+<script>
+/*$function pushFav(obj){
+	data.fav.push(obj);
+	return data.fav;
+};*/
+
+//$("#fav").click(function(){
+//	data.fav.push({{id}});
+//});
+</script>
+
 {{#each exercises}}
-	<div class = "{{bodyPart}}">
+	<div class = "{{bodyPart}}" id = "content">
 		<table style="width: 50%">
 			<tr>
 				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
 				<td><a href="exercisePage/{{id}}"><h3>{{name}}</h3></a></td>
-				<td><img src="images/heart-icon.png"/></td>
+				<td id = "fav"><button onclick = "fav.push("id": "{{id}}")"> <img src="images/heart-icon.png"/></button></td>
 			</tr>
 		</table>
 	</div>
 {{/each}}
+
+
+<script>
+/*$("button").click(function(){
+	fav.push("id:"{{id}});
+	console.log(data.fav);
+});*/
+</script>
 
 <script>
 

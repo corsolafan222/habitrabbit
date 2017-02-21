@@ -1,8 +1,9 @@
 {
 	"part" : [],
+	"fav":[],
 	"exercises": [
 		{
-			"name": "One-legged deadlifts",
+			"name": "Deadlifts",
 			"id":"0",
 			"bodyPart":"lowerbody",
 			"subBody":"legs",
@@ -12,13 +13,13 @@
 			"imageURL": "http://cdn-jpg2.theactivetimes.net/sites/default/files/u141063/EMBED%201%20single%20leg%20deadlift%20shutterstock_314080361.jpg"			
 		},
 		{
-			"name": "One-Legged Shoulder Press",
+			"name": "Shoulder Press",
 			"id":"1",
 			"bodyPart":"upperbody",
 		    "subBody":"shoulder",
 			"time":"15 min",
 			"equipment":"yes",
-			"description": "Stand on your left leg. Hold a kettlebell or dumbbell in your right hand and keep your core tight and spine neutral as you raise it straight above your head. Slowly lower your right arm down so that your right elbow and forearm form a 90-degree angle (pictured here). Repeat the movement for 8 to 12 reps and then repeat on the other side.",
+			"description": "Stand on your left leg. \r\n Hold a kettlebell or dumbbell in your right hand and keep your core tight and spine neutral as you raise it straight above your head. \n Slowly lower your right arm down so that your right elbow and forearm form a 90-degree angle (pictured here). \n Repeat the movement for 8 to 12 reps and then repeat on the other side.",
 			"imageURL": "http://cdn-jpg2.theactivetimes.net/sites/default/files/u141063/EMBED%202%20single%20leg%20shoulder%20press%20shutterstock_249073096.jpg"			
 		},
 		{
@@ -69,10 +70,10 @@
 			"time":"5 min",
 			"equipment":"no",
 			"description": "The levator scapula stretch is also important for eliminating neck pain. The levator scapula is a muscle that often becomes tight and may be very tender where it attaches to the shoulder blade. This stretch can be performed while sitting or standing. 1. Lengthen the muscle by raising the elbow above the shoulder on the side to stretch. 2. In this position, first rest the elbow against a door jamb. This rotates the outside of shoulder blade up and the inside of it down, which lengthens the levator scapula muscle (Figure 3). 3. Second, turn the head away from the side that is stretching and bring the chin down, stretching the back of the neck.4. Third, place the fingers of the other hand on the top of the head and gently pull the head forward increasing the stretch slightly (Figure 5). 5. Hold this for about 30 seconds to a minute.",
-			"imageURL": "http://www.spine-health.com/files/images/levator-scapula-stretch2_0.jpg"
+			"imageURL": "https://highpointwellness.files.wordpress.com/2011/09/stephlevator.jpg"
 		},		
 		{
-			"name": "Quadriceps stretch (front of thighs):",
+			"name": "Quadriceps stretch",
 			"id":"7",
 			"bodyPart": "legs",
 			"subBody":"Quadriceps", 
