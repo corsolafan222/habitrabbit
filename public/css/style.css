@@ -5,7 +5,25 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	padding-top: 75px;
+	padding-top: 85px;
+}
+
+/*Navigation Bar CSS*/
+.navbar-nav {
+	margin:25px;
+	max-height: 25px;
+}
+/* Makes the navigation bar horizonal in mobile view 
+source: http://stackoverflow.com/questions/30644563 */
+.navbar-nav>li, .navbar-nav {
+float: left !important;
+}
+
+/*Exercise CSS*/
+.heart {
+	position:absolute;
+	right: 0px;
+	width: 50px;
 }
 
 .img-thumbnail{
@@ -14,14 +32,19 @@ body {
 	border: none;
 }
 
-.navbar-nav {
-	margin:25px;
-	max-height: 25px;
+.exerciseName {
+	white-space: nowrap;
+	/* Makes the words appear on the same line*/
 }
 
+/*ExercisePage CSS*/
+.exPageImage {
+	max-height : 300px;
+	max-width : 300px;
+	padding-bottom: 85;
+}
 
-/* Makes the navigation bar horizonal in mobile view 
-source: http://stackoverflow.com/questions/30644563 */
-.navbar-nav>li, .navbar-nav {
-float: left !important;
+.exPageContent {
+	padding-left:15px;
+	padding-right:15px;
 }

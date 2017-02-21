@@ -34,12 +34,20 @@
 
 	<h3>Select a Body Part!</h3>
 	<div class = "body">
-		<div id="head"><h2><a href="exercises">Head</a></h2></div>
+		<div id="head"><h2>Head</h2></div>
 		<h2><a href="exercises">Upper Body</a></h2>
 		<h2><a href="exercises">Lower Body</a></h2>
 		<h2><a href="exercises">Legs</a></h2>
 	</div>
 
+	<script>
+	//Make variable pickedbody = head if head is pressed
+		$("#head").click(function() {
+		pickedbody = "head"
+		console.log(pickedbody);
+		$('.head').remove();
+	});
+	</script>
 <!--Navigation bar, home tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
@@ -56,7 +64,7 @@
 
 
 		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
-		<script src="js/bootstrap.js"></script>
+		<script src="/js/bootstrap.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		</body>
 </div>

@@ -18,18 +18,22 @@
 
 	exports.viewExPage = function(req,res){
 		var exId = req.params.id;
-		console.log("the exercise name is: " + data.exercises[exId].name +"description"+data.exercises[exId].description);
-		console.log("data length"+data.exercises.length);
+		console.log("the exercise name is: " + data.exercises[exId].name +"\nDescription: "+data.exercises[exId].description);
+		//console.log("data length: "+data.exercises.length);
 		var exName = data.exercises[exId].name;
 		var exDescription = data.exercises[exId].description;
 		var exBodyPart = data.exercises[exId].bodyPart;
 		var exEquipment = data.exercises[exId].equipment;
 		var exImageURL = data.exercises[exId].imageURL;
 		var exTime = data.exercises[exId].time;
+		var newDescription = exDescription;
+//		newDescription = newDescription.replace("/\n/g","<br>");
+		newDescription = newDescription.replace("newline", "<br>");
+		console.log(newDescription);
 
 		res.render('exercisePage',{
 			name : exName,
-			description : exDescription,
+			description : newDescription,
 			bodyPart : exBodyPart, 
 			equipment : exEquipment,
 			time : exTime,
@@ -37,6 +41,7 @@
 			imageURL : exImageURL
 
 		});
+
 		//const exercise = getArray(exId);
 		//var name = result [0];
 		//console.log(name);
@@ -45,6 +50,7 @@
 		//});
 	}
 	
+
 	/*exports.viewData = function(req,res){
 		console.log(data);
 		res.render('exercisePage',data);

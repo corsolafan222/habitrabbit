@@ -9,4 +9,3 @@ exports.viewExercises = function(req,res){
   //console.log(data)
   res.render('exercises', data);
 };
-

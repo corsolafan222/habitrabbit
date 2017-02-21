@@ -1,3 +1,7 @@
+<!-- Commit comments 02/20 : 
+	Aligned Hearts, exercise text 1 line
+-->
+
 <!doctype html>
 <html>
 <!--Basic mobile web page layout, source: http://www.w3schools.com/w3css/w3css_mobile.asp-->
@@ -39,15 +43,14 @@
 		<table style="width: 50%">
 			<tr>
 				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
-				<td><a href="exercisePage/{{id}}"><h3>{{name}}</h3></a></td>
-				<td><img src="images/heart-icon.png"/></td>
+				<td class="exerciseName"><a href="exercisePage/{{id}}"><h4>{{name}}</h4></a></td>
+				<td class="heart"><img src="images/heart-icon.png" class="img-responsive"/></td>
 			</tr>
 		</table>
 	</div>
 {{/each}}
 
 <script>
-
 $('.lowerbody').remove();
 </script>
 <!--
