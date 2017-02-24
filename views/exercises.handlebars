@@ -1,5 +1,4 @@
-<!-- Commit comments 02/20 : 
-	Aligned Hearts, exercise text 1 line
+<!-- Commit comments 
 -->
 
 <!doctype html>
@@ -39,43 +38,47 @@
 <!--Should read JSON file to update exercise list, with filtering system-->
 
 {{#each exercises}}
-	<div class = "{{bodyPart}}">
+	<div class = "exercise" id="{{id}}">
 		<table style="width: 50%">
 			<tr>
 				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
 				<td class="exerciseName"><a href="exercisePage/{{id}}"><h4>{{name}}</h4></a></td>
-				<td class="heart"><img src="images/heart-icon.png" class="img-responsive"/></td>
+				{{#if fav}}
+				<td class="fav"><img src="images/red-heart.png"/></td>
+				{{else}}
+				<td class="fav"><img src="images/heart-icon.png"/></td>
+				{{/if}}
 			</tr>
 		</table>
 	</div>
 {{/each}}
 
 <script>
-//url parameters? 
-</script>
-<!--
-		<table style="width:50%">
-			<tr>
-					<td><a href="/exercisePage"><img class="img-thumbnail" 
-						src="https://www.acefitness.org/images/webcontentcategory/1.jpg" class="img-thumbnail"/></a></td>
-						<td><a href="/exercisePage"><h3>&nbspWrist&nbspExercise</h3></td></a> 
-				<td><img src="images/heart-icon.png"/></td>
-			</tr>
-			<tr>
-				<td><a href="/exercisePage"><img class="img-thumbnail" src="https://www.acefitness.org/images/webcontentcategory/1.jpg" class="img-responsive"/></a> </td>
-				<td><a href="/exercisePage"><h3>&nbspArm&nbspExercise</h3></a> </td>
-				<td><img src="images/heart-icon.png" class="img-responsive"/>  </td>
-			</tr>
-			<tr>
-				<td><a href="/exercisePage"><img class="img-thumbnail" src="https://www.acefitness.org/images/webcontentcategory/1.jpg" class="img-responsive"/> </a></td>
-				<td><a href="/exercisePage"><h3>&nbspElbow&nbspExercise</h3> </a></td>
-				<td><img src="images/heart-icon.png" class="img-responsive"/>  </td>
-			</tr>
-		</table>
+	$('.fav').click(function() {
+		console.log("it worked!");
+		var exerciseID = $(this).closest('.exercise').attr('id');
+		console.log("User favorited exercise " + exerciseID);
+		var favoritesURL = "exercises" ;
 
-	</div>
--->
+	});
+/*
+	function replaceByValue( field, oldvalue, newvalue ) {
+    for( var k = 0; k < data.length; ++k ) {
+        if( oldvalue == data[k][field] ) {
+            data[k][field] = newvalue ;
+        }
+    }
+    return data;
+}
+console.log(data);
 
+replaceByValue('fav','true','false')
+console.log(data);
+
+replaceByValue('fav','false','true')
+console.log(data);
+*/
+	</script>
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
 		<div class="container-fluid">
@@ -90,17 +93,6 @@
 		</div>
 	</nav>
 
-		<script src="https://code.jquery.com/jquery-1.11.0.js"></script>
-		<script src="/js/bootstrap.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
-		<!--
-		<script>
-			var x = document.getElementsByClassName("{{part.0.name}}");
-			var i;
-			for (i = 0; i < x.length; i++) {
-			    x[i].style.visibility = "visible";
-			}
-		</script> -->
 </body>
 </div>
 </html>

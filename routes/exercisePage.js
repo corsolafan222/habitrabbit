@@ -27,11 +27,13 @@
 		var exImageURL = data.exercises[exId].imageURL;
 		var exTime = data.exercises[exId].time;
 		var newDescription = exDescription;
-//		newDescription = newDescription.replace("/\n/g","<br>");
+		var fav = data.exercises[exId].fav;
+		//newDescription = newDescription.replace("/\n/g","<br>");
 		newDescription = newDescription.replace("newline", "<br>");
-		console.log(newDescription);
+		//console.log(newDescription);
 
 		res.render('exercisePage',{
+			fav : fav,
 			name : exName,
 			description : newDescription,
 			bodyPart : exBodyPart, 
@@ -41,6 +43,7 @@
 			imageURL : exImageURL
 
 		});
+
 
 		//const exercise = getArray(exId);
 		//var name = result [0];

@@ -24,7 +24,7 @@
 				<li>
 					<div id="back-button">
 						<h4>
-							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span>
+							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span> 
 						</h4>
 					</div>
 				</li>
@@ -37,15 +37,22 @@
 
 <div class = "exPageContent">
 
-	<h1>
+	<h2>
 			{{name}}
-	</h1>
-	<h4>Body Part:&nbsp{{bodyPart}}</h4>
+	</h2>
+	<h4>Body Part:&nbsp{{bodyPart}}
+		{{#if fav}}
+		<img class="heart" src="../images/red-heart.png" class="img-responsive"/></h4>
+		{{else}}
+		<img class="heart" src="../images/heart-icon.png" class="img-responsive"/></h4>
+		{{/if}}
 	<h4>Time: &nbsp{{time}}</h4>
 	<br>
-	<p>&nbsp{{description}}</p></li>
-
+	<div class="exDescription">
+		<p>{{description}}</p>
+	</div>
 	<img class="exPageImage" src ="{{imageURL}}"/>
+	<img class="whitespace" src ="../images/whitespace.png"/>
 
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">

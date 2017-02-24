@@ -20,7 +20,7 @@ float: left !important;
 }
 
 /*Exercise CSS*/
-.heart {
+.fav {
 	position:absolute;
 	right: 0px;
 	width: 50px;
@@ -41,10 +41,20 @@ float: left !important;
 .exPageImage {
 	max-height : 300px;
 	max-width : 300px;
-	padding-bottom: 85;
+	/*padding-bottom: 85;*/
 }
 
 .exPageContent {
 	padding-left:15px;
 	padding-right:15px;
+}
+
+.whitespace {
+	max-height : 200px;
+	max-width : 200px;
+}
+
+.exDescription { 
+	font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size : 18px;
 }
