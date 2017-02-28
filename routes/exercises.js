@@ -56,12 +56,7 @@ exports.viewExercises = function(req,res){
 };
 
 exports.favExercise = function(req, res){
-
-console.log(req.body.id1)
-if (data.exercises[req.body.id1].fav == true) {
-	data.exercises[req.body.id1].fav = false;
-}
-else if (data.exercises[req.body.id1].fav == false){
-	data.exercises[req.body.id1].fav = true;
-}
+	// console.log(req.body.id1)
+	data.exercises[req.body.id1].fav = !data.exercises[req.body.id1].fav;
+	res.send(req.body.id1)
 }

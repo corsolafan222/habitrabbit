@@ -57,12 +57,22 @@
 	$('.fav').click(function() {
 		console.log("it worked!");
 		var exerciseID = $(this).closest('.exercise').attr('id');
-		console.log("User favorited exercise " + exerciseID);
 		var favoritesURL = "exercises" ;
 
 		$.post("/exercises/addFav",
 		{
 			"id1": exerciseID
+		}, function(id1) {
+			console.log(window.location.hostname)
+			if ($('#'+id1+' .fav img')[0].src == "http://localhost:3000/images/red-heart.png") {
+				console.log("User un-favorited exercise");
+				$('#'+id1+' .fav img')[0].src = "http://localhost:3000/images/heart-icon.png"
+			} 	
+			else if ($('#'+id1+' .fav img')[0].src == "http://localhost:3000/images/heart-icon.png") {
+				console.log("User favorited exercise");
+				$('#'+id1+' .fav img')[0].src = "http://localhost:3000/images/red-heart.png"
+			}
+			console.log($('#'+id1+' .fav img')[0].src)
 		})
 
 	});
