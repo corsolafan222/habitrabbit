@@ -46,6 +46,7 @@ app.get('/exercises', exercises.viewExercises);
 app.get('/home',home.viewHome);
 app.get('/favorites',favorites.viewFavorites);
 app.get('/exercisePage/:id',exercisePage.viewExPage);
+app.post('/exercises/addFav', exercises.favExercise);
 
 //app.get('/settings', settings.viewSettings);
 // Example route

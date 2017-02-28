@@ -50,7 +50,18 @@ exports.viewExercises = function(req,res){
 		res.render('exercises',dataLegs);
 	}
 	else {
+		// data.exercises[1].fav = true
 		res.render('exercises', data);
 	}
 };
 
+exports.favExercise = function(req, res){
+
+console.log(req.body.id1)
+if (data.exercises[req.body.id1].fav == true) {
+	data.exercises[req.body.id1].fav = false;
+}
+else if (data.exercises[req.body.id1].fav == false){
+	data.exercises[req.body.id1].fav = true;
+}
+}
