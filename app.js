@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var exercises = require('./routes/exercises');
+var exercisesB = require('./routes/exercisesB');
 var home = require('./routes/home');
 var favorites = require('./routes/favorites');
 var exercisePage = require('./routes/exercisePage');
@@ -42,11 +43,14 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/exercises', exercises.viewExercises);
+app.get('/exercisesB', exercisesB.viewExercises);
 //app.get('/exercisePage', exercisePage.viewExPage);
 app.get('/home',home.viewHome);
 app.get('/favorites',favorites.viewFavorites);
 app.get('/exercisePage/:id',exercisePage.viewExPage);
 app.post('/exercises/addFav', exercises.favExercise);
+app.post('/exercisePage/addFav', exercisePage.favExercisePage);
+//app.post('/favorites/addFav', favorites.favExericse);
 
 //app.get('/settings', settings.viewSettings);
 // Example route

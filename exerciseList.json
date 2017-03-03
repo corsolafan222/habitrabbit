@@ -1,7 +1,7 @@
 {
 	"exercises": [
 		{
-			"fav" : true,
+			"fav" : false,
 			"name": "One-legged deadlifts",
 			"id":"0",
 			"bodyPart":"Lower Body",
@@ -23,7 +23,7 @@
 			"imageURL": "http://cdn-jpg2.theactivetimes.net/sites/default/files/u141063/EMBED%202%20single%20leg%20shoulder%20press%20shutterstock_249073096.jpg"			
 		},
 		{
-			"fav" : true,
+			"fav" : false,
 			"name": "Spider Push-Ups",
 			"id":"2",
 			"bodyPart":"Upper Body",
@@ -67,7 +67,7 @@
 			"imageURL": "http://www.yogabasics.com/YB-NEW/wp-content/uploads/2013/11/DownwardFacingFrog1.jpg"
 		},
 		{
-			"fav" : true,
+			"fav" : false,
 			"name": "Levator Scapula Stretch",
 			"id":"6",
 			"bodyPart": "Head",
@@ -78,7 +78,7 @@
 			"imageURL": "https://highpointwellness.files.wordpress.com/2011/09/stephlevator.jpg"
 		},		
 		{
-			"fav" : true,
+			"fav" : false,
 			"name": "Quadriceps stretch (front of thighs):",
 			"id":"7",
 			"bodyPart": "Legs",
@@ -89,7 +89,7 @@
 			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/NymzlPUHWB0Ezc8NG-q7vg5z57A/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/07/29/788/n/1922729/c407e6635886ed81_quad-stretch-stranding/i/Easy-Quad-Stretch.jpg"
 		},
 		{
-			"fav" : true,
+			"fav" : false,
 			"name": "Hamstring stretch ",
 			"id":"8",
 			"bodyPart": "Legs",
@@ -100,7 +100,7 @@
 			"imageURL": "https://media1.popsugar-assets.com/files/thumbor/fG0DEkFKyI77K20-t-6-of7_tPE/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2013/03/12/2/192/1922729/9e9ea039da54fcd0_Hurdler/i/Modified-Hurdler-Stretch.jpg"
 		},
 		{
-			"fav" : true,
+			"fav" : false,
 			"name": "Plié Squat",
 			"id":"9",
 			"bodyPart":"Lower Body",

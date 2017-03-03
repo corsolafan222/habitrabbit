@@ -40,10 +40,11 @@
 	<h2>
 			{{name}}
 	</h2>
+	<div class = "exercise" id="{{id}}">
 	<h4>Body Part:&nbsp{{bodyPart}}
 		{{#if fav}}
 		<img class="heart" src="../images/red-heart.png" class="img-responsive"/></h4>
-		{{else}}
+		{{else}}	
 		<img class="heart" src="../images/heart-icon.png" class="img-responsive"/></h4>
 		{{/if}}
 	<h4>Time: &nbsp{{time}}</h4>
@@ -53,6 +54,45 @@
 	</div>
 	<img class="exPageImage" src ="{{imageURL}}"/>
 	<img class="whitespace" src ="../images/whitespace.png"/>
+	</div>
+
+	<script>
+//CHANGE LOCALHOST:3000 to heroku or w/e & eventually fix it so it works anywhere
+		$('.heart').click(function() {
+		console.log("it worked!");
+		var exerciseID = $(this).closest('.exercise').attr('id');
+		console.log(exerciseID);
+		var favoritesURL = "exercises" ;
+
+		$.post("/exercisePage/addFav",
+		{
+			"id1": exerciseID
+		}, function(id1) {
+			//console.log(window.location.hostname)
+			/*
+			if ($('#'+id1+' .heart img')[0].src == "http://localhost:3000/images/red-heart.png") {
+				console.log("User un-favorited exercise");
+				$('#'+id1+' .heart img')[0].src = "http://localhost:3000/images/heart-icon.png"
+			} 	
+			else if ($('#'+id1+' .heart img')[0].src == "http://localhost:3000/images/heart-icon.png") {
+				console.log("User favorited exercise");
+				$('#'+id1+' .heart img')[0].src = "http://localhost:3000/images/red-heart.png"
+			}
+			*/
+			if ($('.heart')[0].src == "http://localhost:3000/images/red-heart.png") {
+			console.log("User un-favorited exercise");
+			$('.heart')[0].src = "http://localhost:3000/images/heart-icon.png"
+			}
+			else if ($('.heart')[0].src ==  "http://localhost:3000/images/heart-icon.png") {
+			console.log("User un-favorited exercise");
+			$('.heart')[0].src = "http://localhost:3000/images/red-heart.png"
+			}
+			console.log($('.heart')[0].src);
+			//console.log($('.heart img')[0].src)
+		})
+
+	});
+	</script>
 
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">

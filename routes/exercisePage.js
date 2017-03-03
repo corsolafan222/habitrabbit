@@ -1,6 +1,6 @@
 
 	var data = require('../exerciseList.json');
-	
+
 	/*function getArray(obj){
 		const result =[];
 		var i;
@@ -18,7 +18,7 @@
 
 	exports.viewExPage = function(req,res){
 		var exId = req.params.id;
-		console.log("the exercise name is: " + data.exercises[exId].name +"\nDescription: "+data.exercises[exId].description);
+		//console.log("the exercise name is: " + data.exercises[exId].name +"\nDescription: "+data.exercises[exId].description);
 		//console.log("data length: "+data.exercises.length);
 		var exName = data.exercises[exId].name;
 		var exDescription = data.exercises[exId].description;
@@ -28,10 +28,16 @@
 		var exTime = data.exercises[exId].time;
 		var newDescription = exDescription;
 		var fav = data.exercises[exId].fav;
-		//newDescription = newDescription.replace("/\n/g","<br>");
-		newDescription = newDescription.replace("newline", "<br>");
-		//console.log(newDescription);
+		var dataDisplayed = data.exercises[exId];
+		console.log(dataDisplayed);
 
+		//console.log(data.exercises[0]);
+		//newDescription = newDescription.replace("/\n/g","<br>");
+
+		res.render('exercisePage', dataDisplayed);
+			
+
+/*
 		res.render('exercisePage',{
 			fav : fav,
 			name : exName,
@@ -43,6 +49,8 @@
 			imageURL : exImageURL
 
 		});
+*/
+
 
 
 		//const exercise = getArray(exId);
@@ -53,6 +61,11 @@
 		//});
 	}
 	
+	exports.favExercisePage = function(req, res){
+	console.log(req.body.id1)
+	data.exercises[req.body.id1].fav = !data.exercises[req.body.id1].fav;
+	res.send(req.body.id1)
+}
 
 	/*exports.viewData = function(req,res){
 		console.log(data);

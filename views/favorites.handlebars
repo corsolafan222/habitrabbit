@@ -6,7 +6,7 @@
 <head>
 	<title>
 		Habit Rabbit
-	</title>
+	</title
 </head>
 <body>
 <div class="container">
@@ -40,14 +40,41 @@
 			<tr>
 				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
 				<td class="exerciseName"><a href="exercisePage/{{id}}"><h4>{{name}}</h4></a></td>
-				<td class="fav"><img src="images/red-heart.png"/></td>
+				<!-- Don't need this here!<td class="fav"><img src="images/red-heart.png"/></td> -->
 				{{/if}}
 			</tr>
 		</table>
 	</div>
 	{{/each}}
-
 	</div>
+
+<!--
+	<script>
+//CHANGE LOCALHOST:3000 to heroku or w/e & eventually fix it so it works anywhere
+		$('.fav').click(function() {
+			console.log("it worked!");
+			var exerciseID = $(this).closest('.exercise').attr('id');
+			var favoritesURL = "exercises" ;
+
+			$.post("/exercises/addFav",
+			{
+				"id1": exerciseID
+			}, function(id1) {
+				console.log(window.location.hostname)
+				if ($('#'+id1+' .fav img')[0].src == "http://localhost:3000/images/red-heart.png") {
+					console.log("User un-favorited exercise");
+					$('#'+id1+' .fav img')[0].src = "http://localhost:3000/images/heart-icon.png"
+				} 	
+				else if ($('#'+id1+' .fav img')[0].src == "http://localhost:3000/images/heart-icon.png") {
+					console.log("User favorited exercise");
+					$('#'+id1+' .fav img')[0].src = "http://localhost:3000/images/red-heart.png"
+				}
+				console.log($('#'+id1+' .fav img')[0].src)
+			})
+
+		});
+	</script>
+-->
 
 <!--Navigation bar, fav tab active https://getbootstrap.com/components/#navbar-->
 	<nav class="navbar navbar-default navbar-fixed-bottom">
