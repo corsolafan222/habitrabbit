@@ -79,7 +79,7 @@
 		},		
 		{
 			"fav" : false,
-			"name": "Quadriceps stretch (front of thighs):",
+			"name": "Quadriceps Stretch",
 			"id":"7",
 			"bodyPart": "Legs",
 			"subBody":"Quadriceps", 
@@ -90,7 +90,7 @@
 		},
 		{
 			"fav" : false,
-			"name": "Hamstring stretch ",
+			"name": "Hamstring Stretch ",
 			"id":"8",
 			"bodyPart": "Legs",
 			"subBody":"Hamstring", 
