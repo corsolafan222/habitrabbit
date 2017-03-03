@@ -66,13 +66,13 @@
 			"id1": exerciseID
 		}, function(id1) {
 			console.log(window.location.hostname)
-			if ($('#'+id1+' .fav img')[0].src == "http://localhost:3000/images/red-heart.png") {
+			if ($('#'+id1+' .fav img')[0].src == "http://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png") {
 				console.log("User un-favorited exercise");
-				$('#'+id1+' .fav img')[0].src = "http://localhost:3000/images/heart-icon.png"
+				$('#'+id1+' .fav img')[0].src = "http://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png"
 			} 	
-			else if ($('#'+id1+' .fav img')[0].src == "http://localhost:3000/images/heart-icon.png") {
+			else if ($('#'+id1+' .fav img')[0].src == "http://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png") {
 				console.log("User favorited exercise");
-				$('#'+id1+' .fav img')[0].src = "http://localhost:3000/images/red-heart.png"
+				$('#'+id1+' .fav img')[0].src = "http://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png"
 			}
 			console.log($('#'+id1+' .fav img')[0].src)
 		})
