@@ -37,6 +37,28 @@
 	</nav>
 <!--Should read JSON file to update exercise list, with filtering system-->
 
+<!--
+{{#each exercises}}
+	<div class = "exercise" id="{{id}}">
+		<div data-role="page" id="pageone">
+			<div data-role="main" class="ui-content">
+				<ul data-role="listview" data-inset="true">
+					<li>
+						<a href="exercisePage/{{id}}">
+						<img class="img-thumbnail" src="{{imageURL}}"/>
+						<h4 class="exerciseName">{{name}}</h4>
+						</a>
+						{{#if fav}}
+						<img class="fav" src="images/red-heart.png"/>
+						{{else}}
+						<img class="fav" src="images/heart-icon.png"/>
+						{{/if}}
+					</li>
+				</ul>
+	</div>
+{{/each}}
+-->
+
 {{#each exercises}}
 	<div class = "exercise" id="{{id}}">
 		<table style="width: 50%">
@@ -53,11 +75,9 @@
 	</div>
 {{/each}}
 
-
 <script>
 //CHANGE LOCALHOST:3000 to heroku or w/e & eventually fix it so it works anywhere
 	$('.fav').click(function() {
-		console.log("it worked!");
 		var exerciseID = $(this).closest('.exercise').attr('id');
 		var favoritesURL = "exercises" ;
 
@@ -65,14 +85,15 @@
 		{
 			"id1": exerciseID
 		}, function(id1) {
-			console.log(window.location.hostname)
-			if ($('#'+id1+' .fav img')[0].src == "https://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png") {
+			var imgLink = $('#'+id1+' .fav img')[0].src;
+			//if red-heart.png is contained in src, then change to heart-icon
+			if (imgLink.indexOf("red-heart.png") >= 0) {
 				console.log("User un-favorited exercise");
-				$('#'+id1+' .fav img')[0].src = "https://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png"
-			} 	
-			else if ($('#'+id1+' .fav img')[0].src == "https://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png") {
-				console.log("User favorited exercise");
-				$('#'+id1+' .fav img')[0].src = "https://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png"
+				$('#'+id1+' .fav img')[0].src = "images/heart-icon.png"
+			}
+			else if (imgLink.indexOf("heart-icon.png") >= 0) {
+					console.log("User favorited exercise");
+					$('#'+id1+' .fav img')[0].src = "images/red-heart.png"
 			}
 			console.log($('#'+id1+' .fav img')[0].src)
 		})
