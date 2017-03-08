@@ -20,7 +20,7 @@
 	<!-- Top navigation bar with back button and page title-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-default">
 				<li>
 					<div id="back-button">
 						<h4>
@@ -68,24 +68,15 @@
 		{
 			"id1": exerciseID
 		}, function(id1) {
-			//console.log(window.location.hostname)
-			/*
-			if ($('#'+id1+' .heart img')[0].src == "http://localhost:3000/images/red-heart.png") {
+			var imgLink = $('.heart')[0].src;
+
+			if (imgLink.indexOf("red-heart.png") >= 0) {
 				console.log("User un-favorited exercise");
-				$('#'+id1+' .heart img')[0].src = "http://localhost:3000/images/heart-icon.png"
-			} 	
-			else if ($('#'+id1+' .heart img')[0].src == "http://localhost:3000/images/heart-icon.png") {
-				console.log("User favorited exercise");
-				$('#'+id1+' .heart img')[0].src = "http://localhost:3000/images/red-heart.png"
+				$('.heart')[0].src = "../images/heart-icon.png"
 			}
-			*/
-			if ($('.heart')[0].src == "https://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png") {
-			console.log("User un-favorited exercise");
-			$('.heart')[0].src = "https://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png"
-			}
-			else if ($('.heart')[0].src ==  "https://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png") {
-			console.log("User un-favorited exercise");
-			$('.heart')[0].src = "https://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png"
+			else if (imgLink.indexOf("heart-icon.png") >= 0) {
+			console.log("User favorited exercise");
+			$('.heart')[0].src = "../images/red-heart.png"
 			}
 			console.log($('.heart')[0].src);
 			//console.log($('.heart img')[0].src)

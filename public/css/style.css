@@ -5,20 +5,28 @@ h1, h2, h3, h5 {
 }
 
 body {
-	padding-top: 85px;
+	padding-top: 55px;
+	padding-bottom : 65px;
 }
 
-/*Navigation Bar CSS*/
-.navbar-nav {
-	margin:25px;
-	max-height: 25px;
+/*
+.navbar-nav { 
+	width : 125px;
 }
+*/
+
+.navbar-nav>li {
+	/*margin:25px;*/
+	width : 125px;
+	max-height: 25px;
+	text-align : center;
+} 
 /* Makes the navigation bar horizonal in mobile view 
 source: http://stackoverflow.com/questions/30644563 */
+
 .navbar-nav>li, .navbar-nav {
 float: left !important;
 }
-
 /*Exercise CSS*/
 .fav {
 	position:absolute;
