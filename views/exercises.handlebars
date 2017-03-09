@@ -76,8 +76,7 @@
 {{/each}}
 
 <script>
-//CHANGE LOCALHOST:3000 to heroku or w/e & eventually fix it so it works anywhere
-	$('.fav').click(function() {
+$('.fav').click(function() {
 		var exerciseID = $(this).closest('.exercise').attr('id');
 		var favoritesURL = "exercises" ;
 
