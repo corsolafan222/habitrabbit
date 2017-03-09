@@ -31,7 +31,7 @@
 						</h4>
 					</div>
 				</li>
-				<li><h4>&nbspExercises</h4></li>
+				<li><h2 class="title">&nbspExercises</h2></li>
 			</ul>
 		</div>
 	</nav>
@@ -61,7 +61,7 @@
 
 {{#each exercises}}
 	<div class = "exercise" id="{{id}}">
-		<table style="width: 50%">
+		<table>
 			<tr>
 				<td><a href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
 				<td class="exerciseName"><a href="exercisePage/{{id}}"><h4>{{name}}</h4></a></td>
@@ -76,8 +76,7 @@
 {{/each}}
 
 <script>
-//CHANGE LOCALHOST:3000 to heroku or w/e & eventually fix it so it works anywhere
-	$('.fav').click(function() {
+$('.fav').click(function() {
 		var exerciseID = $(this).closest('.exercise').attr('id');
 		var favoritesURL = "exercises" ;
 
@@ -102,7 +101,7 @@
 	</script>
 
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
-	<nav class="navbar navbar-default navbar-fixed-bottom">
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">
 				<li ><a href="/home">

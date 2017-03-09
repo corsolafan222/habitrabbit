@@ -9,23 +9,41 @@ body {
 	padding-bottom : 65px;
 }
 
-/*
-.navbar-nav { 
-	width : 125px;
+/*http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3*/
+.navbar-default {
+	background-image: none;
+	background-color: #FF9933;
 }
-*/
+
+.home-title {
+	display: block;
+	margin: 0 auto;
+	text-indent: 75px;
+	color : black;
+}
+
+.title {
+	display: block;
+	margin: 0 auto;
+	text-indent: 12px;
+	color : black;
+}
+
+/*Navigation Bar CSS*/
 
 .navbar-nav>li {
-	/*margin:25px;*/
 	width : 125px;
-	max-height: 25px;
+	max-height : 25px;
 	text-align : center;
-} 
+}
 /* Makes the navigation bar horizonal in mobile view 
 source: http://stackoverflow.com/questions/30644563 */
-
 .navbar-nav>li, .navbar-nav {
 float: left !important;
+}
+
+.nav.navbar>li>a {
+	color : orange;
 }
 /*Exercise CSS*/
 .fav {

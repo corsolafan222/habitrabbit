@@ -63,8 +63,7 @@
 	</div>
 
 	<script>
-//CHANGE LOCALHOST:3000 to heroku or w/e & eventually fix it so it works anywhere
-		$('.heart').click(function() {
+	$('.heart').click(function() {
 		console.log("it worked!");
 		var exerciseID = $(this).closest('.exercise').attr('id');
 		console.log(exerciseID);
@@ -92,7 +91,7 @@
 	</script>
 
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
-	<nav class="navbar navbar-default navbar-fixed-bottom">
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">
 				<li><a href="/home">

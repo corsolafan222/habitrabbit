@@ -31,7 +31,7 @@
 						</h4>
 					</div>
 				</li>
-				<li><h4>&nbspExercises</h4></li>
+				<li><h2 class="title">&nbspExercises</h2></li>
 			</ul>
 		</div>
 	</nav>
@@ -71,14 +71,15 @@
 		{
 			"id1": exerciseID
 		}, function(id1) {
-			console.log(window.location.hostname)
-			if ($('#'+id1+' .fav img')[0].src == "https://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png") {
+			var imgLink = $('#'+id1+' .fav img')[0].src;
+			//if red-heart.png is contained in src, then change to heart-icon
+			if (imgLink.indexOf("red-heart.png") >= 0) {
 				console.log("User un-favorited exercise");
-				$('#'+id1+' .fav img')[0].src = "https://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png"
-			} 	
-			else if ($('#'+id1+' .fav img')[0].src == "https://a8-habitrabbitcogs120.herokuapp.com/images/heart-icon.png") {
-				console.log("User favorited exercise");
-				$('#'+id1+' .fav img')[0].src = "https://a8-habitrabbitcogs120.herokuapp.com/images/red-heart.png"
+				$('#'+id1+' .fav img')[0].src = "images/heart-icon.png"
+			}
+			else if (imgLink.indexOf("heart-icon.png") >= 0) {
+					console.log("User favorited exercise");
+					$('#'+id1+' .fav img')[0].src = "images/red-heart.png"
 			}
 			console.log($('#'+id1+' .fav img')[0].src)
 		})
@@ -87,7 +88,7 @@
 	</script>
 
 <!--Navigation bar, exercise tab active https://getbootstrap.com/components/#navbar-->
-	<nav class="navbar navbar-default navbar-fixed-bottom">
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">
 				<li ><a href="/home">
