@@ -28,7 +28,6 @@
 						</h4>
 					</div>
 				</li>
-
 			</ul>
 		</div>
 	</nav>
@@ -48,11 +47,18 @@
 		<img class="heart" src="../images/heart-icon.png" class="img-responsive"/></h4>
 		{{/if}}
 	<h4>Time: &nbsp{{time}}</h4>
+	<h4>Equipment: &nbsp{{equipment}}</h4>
+	<br>
+	<img class="exPageImage" src ="{{imageURL}}"/>
+	<br>
 	<br>
 	<div class="exDescription">
-		<p>{{description}}</p>
+<!--		<p>{{description}}</p>-->
+		{{#each description}}
+			<p>{{descrip}}</p>
+			<br>
+		{{/each}}
 	</div>
-	<img class="exPageImage" src ="{{imageURL}}"/>
 	<img class="whitespace" src ="../images/whitespace.png"/>
 	</div>
 
