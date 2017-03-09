@@ -42,6 +42,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/B', index.viewB);
 app.get('/exercises', exercises.viewExercises);
 app.get('/exercisesB', exercisesB.viewExercises);
 //app.get('/exercisePage', exercisePage.viewExPage);

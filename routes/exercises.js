@@ -6,9 +6,14 @@ http://sailsjs.com/documentation/reference/request-req/req-query
 */
 
 var data = require('../exerciseList.json');
-
 //JSON.parse... copies an array of exerciseList.json that we can manipulate
+/*If the user clicks a body part on the home page, it will set
+pickedbody based on the url. If they go through the nav bar, it will
+default to showing all exercises. Should we make it so that it
+keeps the most recent entry? */
+exports.viewExercises = function(req,res){
 var dataHead = (JSON.parse(JSON.stringify(data)));
+
 //.splice deletes the unneeded exercises, splice(starting#, #todelete)
 dataHead.exercises.splice(7,4);
 dataHead.exercises.splice(4,1);
@@ -28,12 +33,6 @@ dataLegs.exercises.splice(9,2);
 dataLegs.exercises.splice(0,7);
 //.exercises[7,8];
 
-/*If the user clicks a body part on the home page, it will set
-pickedbody based on the url. If they go through the nav bar, it will
-default to showing all exercises. Should we make it so that it
-keeps the most recent entry? */
-exports.viewExercises = function(req,res){
-	var data = require('../exerciseList.json');
 	var pickedbody = req.query.bodyPart;
 	console.log(pickedbody);
 	//Depending on which bpart is clicked, send different arrays
