@@ -4,6 +4,7 @@
 <!doctype html>
 <html>
 <!-- Google Analytics Content Experiment code -->
+<!--
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='142344029-1',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -16,6 +17,7 @@ length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
 valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
+-->
 <!-- End of Google Analytics Content Experiment code -->
 
 <!--Basic mobile web page layout, source: http://www.w3schools.com/w3css/w3css_mobile.asp-->
@@ -76,6 +78,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 {{#each exercises}}
 	<div class = "exercise" id="{{id}}">
+		<br>
 		<table>
 			<tr>
 				<td><a  class="viewedExercise" href="exercisePage/{{id}}"><img class="img-thumbnail" src="{{imageURL}}"/></a></td>
@@ -87,6 +90,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				{{/if}}
 			</tr>
 		</table>
+		<br>
 	</div>
 {{/each}}
 
@@ -109,7 +113,6 @@ $('.fav').click(function() {
 					console.log("User favorited exercise");
 					$('#'+id1+' .fav img')[0].src = "images/red-heart.png"
 			}
-			console.log($('#'+id1+' .fav img')[0].src)
 		})
 
 	});

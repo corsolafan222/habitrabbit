@@ -29,7 +29,7 @@
 						</h4>
 					</div>
 				</li>
-				<li><h3 class="title">&nbsp{{name}}</h3></li>
+			<!--	<li><h3 class="title">&nbsp{{name}}</h3></li>  -->
 
 			</ul>
 		</div>
@@ -67,9 +67,7 @@
 
 	<script>
 	$('.heart').click(function() {
-		console.log("it worked!");
 		var exerciseID = $(this).closest('.exercise').attr('id');
-		console.log(exerciseID);
 		var favoritesURL = "exercises" ;
 
 		$.post("/exercisePage/addFav",
@@ -86,7 +84,6 @@
 			console.log("User favorited exercise");
 			$('.heart')[0].src = "../images/red-heart.png"
 			}
-			console.log($('.heart')[0].src);
 			//console.log($('.heart img')[0].src)
 		})
 
