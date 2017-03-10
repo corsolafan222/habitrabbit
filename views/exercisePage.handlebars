@@ -18,27 +18,30 @@
 	<link href="/css/style.css" rel="stylesheet"> 
 	<!-- Glyphicons from https://getbootstrap.com/components/#glyphicons-->
 	<!-- Top navigation bar with back button and page title-->
+	
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-			<ul class="nav navbar-default">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
 				<li>
 					<div id="back-button">
 						<h4>
-							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span> 
+							<span class="glyphicon glyphicon-chevron-left">&nbsp&nbsp</span>
 						</h4>
 					</div>
 				</li>
+				<li><h3 class="title">&nbsp{{name}}</h3></li>
+
 			</ul>
 		</div>
 	</nav>
-	
+
 </div>
 
 <div class = "exPageContent">
 
-	<h2>
+	<h3>
 			{{name}}
-	</h2>
+	</h3>
 	<div class = "exercise" id="{{id}}">
 	<h4>Body Part:&nbsp{{bodyPart}}
 		{{#if fav}}

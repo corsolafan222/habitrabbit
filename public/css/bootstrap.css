@@ -4324,6 +4324,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  text-align:center;
 }
 
 .navbar:before,
@@ -4432,6 +4433,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-fixed-bottom .navbar-collapse {
     padding-right: 0;
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -4536,6 +4538,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-nav {
   margin: 7.5px -15px;
+  text-align:center;
 }
 
 .navbar-nav > li > a {

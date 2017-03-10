@@ -1,7 +1,11 @@
 /* stylesheet for */
 
-h1, h2, h3, h5 {
+h1, h2, h5 {
 	color: goldenrod;
+}
+
+h3{
+	color:grey;
 }
 
 body {
@@ -12,21 +16,27 @@ body {
 /*http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3*/
 .navbar-default {
 	background-image: none;
-	background-color: #FF9933;
+	background-color: #FFE657;
 }
 
 .home-title {
 	display: block;
 	margin: 0 auto;
-	text-indent: 75px;
-	color : black;
+	text-indent: 100px;
+	color : grey;
+	text-align:center;
 }
 
 .title {
-	display: block;
+	display: inline-block;
 	margin: 0 auto;
-	text-indent: 12px;
-	color : black;
+	text-indent: 10px;
+	color : grey;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size:25;
+	text-align:center;
 }
 
 /*Navigation Bar CSS*/
@@ -83,4 +93,12 @@ float: left !important;
 .exDescription { 
 	font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size : 18px;
+}
+
+/*Log in page CSS*/
+.logo{
+	display:block;
+	height: 100%;
+	width:100%;
+	margin:auto;
 }
