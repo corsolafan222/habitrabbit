@@ -157,6 +157,61 @@
 			{"descrip":"4. Pause, then take two small side steps to your left"},
 			{"descrip":"Repeat Once more"}],
 			"imageURL": "http://lifeinleggings.com/wp-content/uploads/2015/08/lateral-lunge-exercise-breakdown.jpg"
+		},
+		{
+			"fav" : false,
+			"name": "Corner Stretch",
+			"id":"11",
+			"bodyPart":"Upper Body",
+			"subBody":"Shoulder",
+			"time":"5 minutes",
+			"equipment":"None",
+			"description": [{"descrip": "1. Stand approximately two feet back from the corner, facing into the corner, feet together. "},
+					{"descrip": "2. Place forearms on each wall, with elbows slightly below shoulder height."},
+			  		{"descrip":"3. Lean in as far as possible without pain. You should feel a stretch in the front of the shoulders an chest. "},
+				    {"descrip":"4. Hold stretch for 30-seconds to a minute. Perform the stretch 3-5 times throughout the day and before any neck exercises."}],
+			"imageURL": "images/corner-stretch.jpg"			
+		},
+		{
+			"fav" : false,
+			"name": "Seated Wrist Curl ",
+			"id":"12",
+			"bodyPart":"Upper Body ",
+			"subBody":"wrists",
+			"time":"5 minutes ",
+			"equipment":"dumbbell ",
+			"description": [{"descrip": "1.In a seated position, with your forearms on your thighs and palms facing upward, with a 5-, 10-, or even 20lb weight in hand, flex your wrist upward.  "},
+					{"descrip": "2. Keep the forearms well placed against your thighs for greater stability and isolation of the wrist and forearm musculature. "},
+			  		{"descrip":"3. Be careful to place the wrist three to four inches away from the knee to allow the full range of motion "},
+				    {"descrip":"4. Do 3 sets of 20 repetitions."}],
+			"imageURL": "images/seatedwristcurl.png"			
+		},
+		{
+			"fav" : false,
+			"name": "Step Up",
+			"id":"13",
+			"bodyPart":"Lower Body",
+			"subBody":"Glutes",
+			"time":"5 minutes",
+			"equipment":"Sturdy box",
+			"description": [{"descrip": "1. Place one foot on a sturdy box or step with your weight placed on the center of your foot."},
+					{"descrip": "2. Push your hips back and then stand straight up, squeezing the glute of your supporting leg at the top of the movement. Hold this position while keeping your hips and shoulders square and your body tall."},
+			  		{"descrip":"3. Push your hips back again, and slowly lower your trailing foot to the floor, taking 3 seconds on the way back down to the starting position."},
+				    {"descrip":"4. Once you've perfected this pattern, you can hold a pair of dumbbells in your hands. "}],
+			"imageURL": "http://www.menshealth.com/sites/menshealth.com/files/styles/slideshow-desktop/public/images/slideshow2/1-stepup.jpg?itok=gg1WCzXR"			
+		},
+				{
+			"fav" : false,
+			"name": "Head and Neck Exercise",
+			"id":"14",
+			"bodyPart":"Head",
+			"subBody":"Neck",
+			"time":"5 minutes",
+			"equipment":"none",
+			"description": [{"descrip": "1. Sitting erect, bend the head forward three times, to the back three times, to the right side three times, to the left side three times, and then circle the head each way three times."},
+					{"descrip": "2. Don't hurry through with it but take the time to do it."},
+			  		{"descrip":"3. Do this exercise each morning and each evening for better results"}],
+			"imageURL": "images/headneckexercise.png"			
 		}
 	]
 }

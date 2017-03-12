@@ -16,25 +16,30 @@ exports.viewExercises = function(req,res){
 //JSON.parse... copies an array of exerciseList.json that we can manipulate
 var dataHead = (JSON.parse(JSON.stringify(data)));
 //.splice deletes the unneeded exercises, splice(starting#, #todelete)
-dataHead.exercises.splice(7,4);
+dataHead.exercises.splice(7,7);
 dataHead.exercises.splice(4,1);
 dataHead.exercises.splice(0,3);
 
 //exercises 3,5,6
 var dataUpperBody = (JSON.parse(JSON.stringify(data)));;
+dataUpperBody.exercises.splice(13,2);
 dataUpperBody.exercises.splice(5,6);
 dataUpperBody.exercises.splice(3,1);
 dataUpperBody.exercises.splice(0,1);
 //.exercises[1,2,4];
 var dataLowerBody = (JSON.parse(JSON.stringify(data)));;
-dataLowerBody.exercises.splice(1,8);
+dataLowerBody.exercises.splice(14,1);
+dataLowerBody.exercises.splice(11,2);
+dataLowerBody.exercises.splice(1,6);
 //.exercises[0,9,10];
+/* No longer needed, merged legs and Lower Body
 var dataLegs = (JSON.parse(JSON.stringify(data)));;
 dataLegs.exercises.splice(9,2);
 dataLegs.exercises.splice(0,7);
+*/
 //.exercises[7,8];
 	var pickedbody = req.query.bodyPart;
-	console.log(pickedbody);
+	//console.log(pickedbody);
 	//Depending on which bpart is clicked, send different arrays
 	if (pickedbody == "head") {
 		res.render('exercises', dataHead);
@@ -45,9 +50,11 @@ dataLegs.exercises.splice(0,7);
 	else if (pickedbody == "lowerbody") {
 		res.render('exercises',dataLowerBody);
 	}
+	/*
 	else if (pickedbody == "legs") {
 		res.render('exercises',dataLegs);
 	}
+	*/
 	else {
 		// data.exercises[1].fav = true
 		res.render('exercises', data);
