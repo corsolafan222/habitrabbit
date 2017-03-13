@@ -197,7 +197,7 @@
 			"description": [{"descrip": "1. Place one foot on a sturdy box or step with your weight placed on the center of your foot."},
 					{"descrip": "2. Push your hips back and then stand straight up, squeezing the glute of your supporting leg at the top of the movement. Hold this position while keeping your hips and shoulders square and your body tall."},
 			  		{"descrip":"3. Push your hips back again, and slowly lower your trailing foot to the floor, taking 3 seconds on the way back down to the starting position."},
-				    {"descrip":"4. Once you've perfected this pattern, you can hold a pair of dumbbells in your hands. "}],
+				    {"descrip":"Once you've perfected this pattern, you can hold a pair of dumbbells in your hands. "}],
 			"imageURL": "http://www.menshealth.com/sites/menshealth.com/files/styles/slideshow-desktop/public/images/slideshow2/1-stepup.jpg?itok=gg1WCzXR"			
 		},
 				{
@@ -208,9 +208,10 @@
 			"subBody":"Neck",
 			"time":"5 minutes",
 			"equipment":"none",
-			"description": [{"descrip": "1. Sitting erect, bend the head forward three times, to the back three times, to the right side three times, to the left side three times, and then circle the head each way three times."},
-					{"descrip": "2. Don't hurry through with it but take the time to do it."},
-			  		{"descrip":"3. Do this exercise each morning and each evening for better results"}],
+			"description": [{"descrip": "1. Sitting erect, bend your head forward three times and to the back three times."},
+					{"descrip": "2. Next, bend your head to the right side three times and to the left side three times"},
+					{"descrip": "3. Finally, circle your head clockwise and counterclockwise, three times each."},
+			  		{"descrip":"Take your time with each head movement. Do this exercise each morning and each evening for better results"}],
 			"imageURL": "images/headneckexercise.png"			
 		}
 	]
