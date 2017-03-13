@@ -15,12 +15,21 @@ body {
 	background-color: #FFE657;
 }
 
+/*home css*/
 .home-title {
 	display: block;
 	margin: 0 auto;
 	text-indent: 100px;
 	color : grey;
 	text-align:center;
+}
+
+div.fill-screen {
+}
+
+img.make-it-fit {
+    max-width: 99%;
+    max-height: 33%;
 }
 
 .title {

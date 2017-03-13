@@ -42,6 +42,7 @@ dataLegs.exercises.splice(0,7);
 	//console.log(pickedbody);
 	//Depending on which bpart is clicked, send different arrays
 	if (pickedbody == "head") {
+		dataHead.exercises["head"] = true;
 		res.render('exercises', dataHead);
 	}
 	else if (pickedbody == "upperbody") {
