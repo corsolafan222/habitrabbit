@@ -3,6 +3,9 @@
 h3{
 	color:grey;
 }
+h4{
+	font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
 body {
 	padding-top: 55px;
@@ -57,8 +60,8 @@ source: http://stackoverflow.com/questions/30644563 */
 float: left !important;
 }
 
-.nav.navbar>li>a {
-	color : orange;
+.navbar-nav>li>a {
+	font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 /*Exercise CSS*/
 .fav {
@@ -73,8 +76,9 @@ float: left !important;
 	border: none;
 }
 
-.exerciseName {
+.exerciseName, .exerciseName>a>h4 {
 	white-space: nowrap;
+	font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	/* Makes the words appear on the same line*/
 }
 
