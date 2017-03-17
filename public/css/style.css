@@ -17,6 +17,10 @@ body {
 	background-image: none;
 	background-color: #FFE657;
 }
+.navbar-inverse {
+	background-image: none;
+	background-color: black;
+}
 
 /*home css*/
 .home-title {
